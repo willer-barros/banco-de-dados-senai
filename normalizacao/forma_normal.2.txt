@@ -1,0 +1,23 @@
+Segunda Forma Normal (2FN)
+Foco: Eliminação de Dependências Parciais (Requer Chave Primária Composta).
+
+Cenário: Após aplicar a 1FN no exercício anterior, a equipe de TI criou a 
+tabela DETALHES_PEDIDO abaixo. Agora, eles notaram que o nome do cliente 
+e a data do pedido estão sendo repetidos desnecessariamente para cada item comprado. 
+
+Análise de Dependências:
+
+A Chave Primária é composta: (ID_Pedido + ID_Produto).
+Qtd depende dos dois (quanto daquele produto naquele pedido).
+Nome_Produto e Preço_Unit dependem apenas de ID_Produto.
+Data_Pedido e Nome_Cliente dependem apenas de ID_Pedido.
+Problemas Identificados:
+
+Anomalia de Atualização: Se a "Ana Silva" mudar de nome, precisamos atualizar várias linhas.
+Anomalia de Inserção: Não podemos cadastrar um novo cliente se ele ainda não fez um pedido (pois o ID_Pedido seria nulo na chave composta). 
+Tarefa do Aluno:
+
+Identifique as dependências parciais (atributos que dependem apenas de parte da chave primária). 
+Decomponha a tabela em três tabelas distintas para atingir a 2FN.
+Desenhe as novas tabelas indicando as Chaves Estrangeiras.
+

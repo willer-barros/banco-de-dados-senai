@@ -1,0 +1,1 @@
+select MAX(valor_salario) from funcionarios;

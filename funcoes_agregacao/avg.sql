@@ -1,0 +1,1 @@
+select AVG(valor_salario) from funcionarios;

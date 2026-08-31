@@ -1,0 +1,14 @@
+Primeira Forma Normal (1FN)
+Foco: Atomicidade e Eliminação de Grupos Repetidos. 
+
+Cenário: A rede de lojas "TechVarejo" exporta semanalmente um relatório de vendas 
+em uma única tabela plana para o setor financeiro. No entanto, o sistema atual 
+permite que múltiplos itens de um mesmo pedido sejam listados em uma única linha, 
+separados por vírgulas, ou que colunas sejam repetidas (Item1, Item2, Item3).
+
+Problemas Identificados:
+
+A coluna Itens contém múltiplos valores (não é atômica).
+Não é possível filtrar facilmente "todas as vendas de Mouse" sem varrer o texto inteiro.
+Se um pedido tiver 10 itens, a estrutura da tabela quebraria ou exigiria colunas extras (Item2, Item3...).
+

@@ -1,0 +1,22 @@
+Terceira Forma Normal (3FN)
+Foco: Eliminação de Dependências Transitivas. 
+
+Cenário: A empresa normalizou seus pedidos, mas a tabela de FUNCIONARIOS 
+ainda causa problemas. O banco de dados armazena informações sobre a filial 
+onde cada funcionário trabalha diretamente na tabela de funcionários.
+
+Análise de Dependências:
+
+Chave Primária: ID_Func.
+ID_Func → Nome, Cargo, ID_Filial.
+Problema: ID_Func → ID_Filial → Cidade_Filial, Estado_Filial, Gerente_Filial.
+A cidade e o gerente dependem da Filial, não diretamente do Funcionário.
+Problemas Identificados:
+
+Anomalia de Atualização: Se a filial 5 mudar de gerente ou de cidade, temos que atualizar todos os funcionários daquela filial.
+Anomalia de Exclusão: Se o último funcionário da filial 8 for demitido e apagado do sistema, perdemos o registro de que a filial 8 fica no Rio de Janeiro.
+Tarefa do Aluno:
+
+Identifique a dependência transitiva nesta tabela. 
+Reestruture o banco de dados para atingir a 3FN, separando os dados das Filiais dos dados dos Funcionários.
+Escreva o script SQL CREATE TABLE para as novas tabelas normalizadas.

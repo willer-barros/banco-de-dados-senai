@@ -1,0 +1,1 @@
+select COUNT(valor_salario) from funcionarios;

@@ -1,0 +1,1 @@
+select SUM(valor_salario) from funcionarios;

@@ -1,0 +1,1 @@
+select MIN(valor_salario) from funcionarios;
