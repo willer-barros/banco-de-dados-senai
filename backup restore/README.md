@@ -5,3 +5,14 @@
 1. Iniciar um projeto
 2. Criar o arquivo script.js
 3. no package.json trocar o type para module
+4. executar com node
+
+### criar o projeto node
+```bash
+    npm init -y
+```
+
+### Usar o module
+```bash
+    "type": "module"
+```

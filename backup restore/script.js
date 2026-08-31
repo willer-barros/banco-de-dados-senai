@@ -37,7 +37,7 @@ async function popularBanco() {
     await client.query('BEGIN');
     
 
-    const totalRegistros = 1000000;
+    const totalRegistros = 100000;
     const tamanhoLote = 500;
     console.log(`Iniciando a criação de ${totalRegistros} registros...`);
 
