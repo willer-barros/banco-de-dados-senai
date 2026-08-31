@@ -1,6 +1,6 @@
 # Introdução a Banco de Dados
 
-Este repositório foi criado para centralizar os assuntos e atividades práticas sobre modelagem de banco de dados. Abaixo você encontrará os assuntos trabalhados nesse repositório.
+Este repositório foi criado para centralizar os assuntos e atividades práticas sobre modelagem de banco de dados. Abaixo você encontrará os tópicos trabalhados nesse repositório.
 
 ## 📌 Conteúdo Abordado
 
