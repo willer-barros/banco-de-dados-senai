@@ -13,5 +13,4 @@ insert into pessoa(nome, cpf) values
 ('valentina', '00011122244'),
 ('paulo', '00011122233');
 
--- Aqui de fato começará o processo de backup
 

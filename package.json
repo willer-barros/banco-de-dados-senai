@@ -1,0 +1,16 @@
+{
+  "name": "banco-de-dados-senai-main",
+  "version": "1.0.0",
+  "description": "Este repositório foi criado para centralizar os assuntos e atividades práticas sobre modelagem de banco de dados. Abaixo você encontrará os tópicos trabalhados nesse repositório.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.23.0"
+  }
+}
