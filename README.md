@@ -1,6 +1,6 @@
-# 🏭 Módulo de Banco de Dados - Introdução ao Desenvolvimento de Projetos
+# Introdução a Banco de Dados
 
-Este repositório foi criado para centralizar as atividades práticas sobre modelagem de banco de dados e relacionamentos SQL, aplicados ao contexto da indústria. Aqui você encontrará os templates e as instruções para os exercícios de fixação.
+Este repositório foi criado para centralizar os assuntos e atividades práticas sobre modelagem de banco de dados. Abaixo você encontrará os assuntos trabalhados nesse repositório.
 
 ## 📌 Conteúdo Abordado
 
@@ -14,6 +14,8 @@ Este repositório foi criado para centralizar as atividades práticas sobre mode
 * **Funções**
 * **Backup**
 * **Restore**
+* **Grant**
+* **Revoke**
 * **Git**
 
 ---
