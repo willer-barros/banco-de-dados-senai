@@ -2,7 +2,7 @@
 
 1. Declarar variáveis (PL/pgSQL)
 Dentro de funções, procedimentos ou blocos DO, DECLARE introduz a seção de declarações, onde se definem variáveis locais, constantes e cursores:
-
+```bash
 CREATE FUNCTION exemplo() RETURNS void AS $$
 DECLARE
     contador   INTEGER := 0;
@@ -13,10 +13,13 @@ BEGIN
     -- uso das variáveis
 END;
 $$ LANGUAGE plpgsql;
+```
 
-Sintaxe geral:
+### Sintaxe geral:
 
+```bash
 DECLARE nome [CONSTANT] tipo [NOT NULL] [{ DEFAULT | := } valor];
+```
 
 Sem valor inicial → a variável é NULL.
 CONSTANT impede reatribuição.
@@ -24,12 +27,14 @@ Escopo é por bloco (uma variável declarada em um BEGIN...END interno é local 
 2. Definir um cursor (SQL)
 Fora de PL/pgSQL, DECLARE cria um cursor — um ponteiro para o resultado de uma query, permitindo buscar linhas uma a uma com FETCH:
 
+```bash
 BEGIN;
 DECLARE meu_cursor CURSOR FOR SELECT * FROM filmes;
 FETCH NEXT FROM meu_cursor;
 FETCH 5 FROM meu_cursor;
 CLOSE meu_cursor;
 COMMIT;
+```
 
 Sintaxe completa:
 
