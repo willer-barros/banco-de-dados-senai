@@ -1,8 +1,5 @@
--- Habilitar extensao para funcoes de criptografia (LGPD)
-CREATE EXTENSION IF NOT EXISTS pgcrypto;
-
 -- -----------------------------------------------------------------------------
--- 1. DDL: ESTRUTURA DO BANCO DE DADOS
+-- . DDL: ESTRUTURA DO BANCO DE DADOS
 -- -----------------------------------------------------------------------------
 
 CREATE TABLE colaboradores (
@@ -207,3 +204,4 @@ SELECT * FROM fn_buscar_colaboradores('Mariana');
 -- Teste das Views:
 SELECT * FROM vw_painel_principal;
 SELECT * FROM vw_cronograma_prazos;
+
